@@ -4,7 +4,7 @@ import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.util.logging.Logger;
 
-public class PrintStatement {
+public class PrintStatements {
 
 	public static void main(String[] args) throws FileNotFoundException {
 		
