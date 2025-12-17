@@ -167,7 +167,14 @@ public class Assignment4_Collections {
 		System.out.println("Final product List :"+productList);
 		System.out.println("************************************");
 		
-		System.out.println("Print the data from Product details > Supplier Name > Office Depot ==>"+product2Details.get("Supplier"));
+		//Now Lets store all lists into Map
+		Map<String, List<Map<String, String>>> globalData = new HashMap<String, List<Map<String, String>>>();
+		globalData.put("StudentList",studentList);
+		globalData.put("EmployeeList",empList);
+		globalData.put("ProductList",productList);
+		
+		//Print the data from Product details > Supplier Name > Office Depot
+		System.out.println("Print the data from Product details > Supplier Name > Office Depot ==>"+globalData.get("ProductList").get(1).get("Supplier"));
 	}
 		
 
