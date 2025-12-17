@@ -1,4 +1,4 @@
-package language.basics;
+package printStatements;
 
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
