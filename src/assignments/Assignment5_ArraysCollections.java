@@ -22,7 +22,7 @@ public class Assignment5_ArraysCollections {
 		Integer thirdCity = top5LargestCities.get(2);
 		Integer fourthCity = top5LargestCities.get(3);
 		Integer totalArea = thirdCity+fourthCity;
-		System.out.println("total area of the 3rd and 4th cities combined :"+totalArea);
+		System.out.println("Total area of the 3rd and 4th cities combined :"+totalArea);
 		
 		//2. Create a set of the top 10 most visited tourist attractions in the world and print out all of them and its size.
 		Set<String> top10Attractions = new LinkedHashSet<String>();
