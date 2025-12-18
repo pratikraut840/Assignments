@@ -187,7 +187,7 @@ public class CollectionsInJava {
 		empNamesHashSet.add("Sam"); // duplicate
 		empNamesHashSet.remove("John");
 		System.out.println(empNamesHashSet.size());
-//		System.out.println(empNamesHashSet.get());// get() not supported
+//		System.out.println(empNamesHashSet.get());// get() not supported because set doesn't have Index
 		System.out.println(empNamesHashSet);
 		System.out.println();
 		
@@ -216,7 +216,7 @@ public class CollectionsInJava {
 		empNamesLinkedHashSet.add("Sam"); // duplicate
 		empNamesLinkedHashSet.remove("John");
 		System.out.println(empNamesLinkedHashSet.size());
-//		System.out.println(empNamesLinkedHashSet.get());// get() not supported
+//		System.out.println(empNamesLinkedHashSet.get());// get() not supported because set doesn't have Index
 		System.out.println(empNamesLinkedHashSet);
 		System.out.println();
 		
@@ -240,11 +240,11 @@ public class CollectionsInJava {
 		empNamesTreeSet.add("Nick");
 		empNamesTreeSet.add("Rio");
 		empNamesTreeSet.add("Amy");
-//		empNamesTreeSet.add(null);
+//		empNamesTreeSet.add(null); //NullPointerExpection
 		empNamesTreeSet.add("Sam"); // duplicate
 		empNamesTreeSet.remove("John");
 		System.out.println(empNamesTreeSet.size());
-//		System.out.println(empNamesTreeSet.get());// get() not supported
+//		System.out.println(empNamesTreeSet.get());// get() not supported because set doesn't have Index
 		System.out.println(empNamesTreeSet);
 		System.out.println();
 		
@@ -330,9 +330,9 @@ public class CollectionsInJava {
 		empNamesTreeMap.put("Skin","FAIR");
 		empNamesTreeMap.put("Texture","Complex");
 		empNamesTreeMap.put("Texture","Complex"); // duplicate
-//		empNamesTreeMap.put(null,null);
+//		empNamesTreeMap.put(null,null); //Null key Not allowed
 		empNamesTreeMap.put("Sam",null); 
-//		empNamesTreeMap.put(null,"Sam"); 
+//		empNamesTreeMap.put(null,"Sam");  //Null key values Not allowed
 		System.out.println(empNamesTreeMap.size());
 //		System.out.println(empNamesTreeMap.get());// get() not supported
 		System.out.println(empNamesTreeMap);
@@ -360,9 +360,9 @@ public class CollectionsInJava {
 		empNamesHashtable.put("Skin","FAIR");
 		empNamesHashtable.put("Texture","Complex");
 		empNamesHashtable.put("Texture","Complex"); // duplicate
-//		empNamesHashtable.put(null,null);
-//		empNamesHashtable.put("Sam",null); 
-//		empNamesHashtable.put(null,"Sam"); 
+//		empNamesHashtable.put(null,null); //Null key values Not allowed
+//		empNamesHashtable.put("Sam",null); //Null key values Not allowed
+//		empNamesHashtable.put(null,"Sam");  //Null key values Not allowed
 		System.out.println(empNamesHashtable.size());
 //		System.out.println(empNamesHashtable.get());// get() not supported
 		System.out.println(empNamesHashtable);

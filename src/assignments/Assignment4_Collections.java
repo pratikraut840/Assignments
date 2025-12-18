@@ -12,6 +12,8 @@ public class Assignment4_Collections {
 		
 		/********* STUDENTS DETAILS *****/
 		
+		//Note: We use List(Parent) instead of ArrayList(Child) to achieve loose coupling and flexibility. It allows us to change the implementation without affecting the code.
+		
 		//Store Student1 Details using HashMap
 		Map<String, String> student1Details = new HashMap<String,String>();
 		student1Details.put("Name", "John Doe");
@@ -159,6 +161,7 @@ public class Assignment4_Collections {
 		product3Details.put("Expiry Date", "Jan 2027");
 		System.out.println("product3 Details :"+product3Details);
 		
+		
 		//Lets store product data into List
 		List<Map<String, String>> productList = new ArrayList<Map<String, String>>();
 		productList.add(product1Details);
@@ -167,11 +170,21 @@ public class Assignment4_Collections {
 		System.out.println("Final product List :"+productList);
 		System.out.println("************************************");
 		
-		//Now Lets store all lists into Map
+		//Approach1: Now Lets store all lists into Map
 		Map<String, List<Map<String, String>>> globalData = new HashMap<String, List<Map<String, String>>>();
 		globalData.put("StudentList",studentList);
 		globalData.put("EmployeeList",empList);
 		globalData.put("ProductList",productList);
+		System.out.println(globalData);
+		System.out.println("************************************");
+		
+		//Approach2: Now Lets store all lists into List
+		List<List<Map<String, String>>> globalData2 = new ArrayList<List<Map<String, String>>>();
+		globalData2.add(studentList);
+		globalData2.add(empList);
+		globalData2.add(productList);
+		System.out.println(globalData2);
+		System.out.println("************************************");
 		
 		//Print the data from Product details > Supplier Name > Office Depot
 		System.out.println("Print the data from Product details > Supplier Name > Office Depot ==>"+globalData.get("ProductList").get(1).get("Supplier"));
