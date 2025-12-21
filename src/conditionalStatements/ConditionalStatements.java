@@ -1,9 +1,10 @@
 package conditionalStatements;
 
 public class ConditionalStatements {
-	
+
 	// Conditional Statements : Statements along with conditions
-	//We always tell JVM to satisfy the condition and if satisfy then only allow it to execute
+	// We always tell JVM to satisfy the condition and if satisfy then only allow it
+	// to execute
 
 	// if -else statement ==> when we don't know the result of condition
 	// switch-case statement ==> when we know the result of condition and we want to
@@ -28,11 +29,16 @@ public class ConditionalStatements {
 
 		// switch-case statement ==> when we know the result of condition and we want to
 		// choose one among many options
-		//When working with switch-case, break is necessary
+		// When working with switch-case, break is necessary
 
 		// syntax:
 		// switch(variable/expression) { case value1: //code break; case value2: //code
 		// break; ... default: //code }
+
+		// Jumping statements in Java
+		// 1. break: break the flow/iteration
+		// 2. continue: skip the flow/iteration
+		// 3. return: return the variable/method which written with return
 	}
 
 }
