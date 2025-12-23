@@ -1,9 +1,9 @@
-package assignments;
+package arrays;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class Assignment10_ConditionalStatementsLoops {
+public class s2 {
 
 	double baseSalary = 0;
 	double variablePay = 0;
@@ -37,7 +37,7 @@ public class Assignment10_ConditionalStatementsLoops {
 
 	public static void main(String[] args) {
 
-		Assignment10_ConditionalStatementsLoops obj = new Assignment10_ConditionalStatementsLoops();
+		s2 obj = new s2();
 
 		// Store employee using array
 		String[] empNames = { "Alice Johnson", "Bob Smith", "Carol Davis", "David Brown", "Eva Green" };
