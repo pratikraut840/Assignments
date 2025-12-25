@@ -1,6 +1,6 @@
 package assignments;
 
-public class Assignment12 {
+public class Assignment12_StockProfit {
 
 	static int calculateMaxProfit(int[] prices) {
 
