@@ -1,4 +1,4 @@
-package arrays;
+package temp;
 
 public class sample {
 
