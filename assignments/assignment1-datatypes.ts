@@ -19,7 +19,7 @@ const email:string="john.doe@example.com";
 console.log("5. Person's email address: "+email)
 
 // 6. Coordinates of a location (latitude, longitude): 37.7749, -122.4194
-const latitude:number=37.7749; 
+const latitude:number=37.7749;
 const longitude:number=-122.4194;
 console.log("6. Coordinates of a location (latitude, longitude): "+latitude+", "+longitude);
 
