@@ -18,7 +18,7 @@ function checkLoanEligibility(
         // condition3: For credit scores between 650 and 750, the customer’s income must be at least $50,000
         if (income >= 50000) {
             // condition4: the system checks whether the customer is employed.
-            console.log("the loan to be considered");
+            console.log("the income is above $50,000, loan to be considered");
             if (isEmployed == true) {
                 console.log("The customer is employed");
 
