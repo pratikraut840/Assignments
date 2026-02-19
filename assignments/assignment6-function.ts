@@ -18,4 +18,4 @@ function checkPrimeNumber(number: number): void {
     return console.log("Given number is prime");
 }
 
-checkPrimeNumber(6)
+checkPrimeNumber(7)
